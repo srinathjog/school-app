@@ -13,7 +13,7 @@
   <ul class="divide-y divide-gray-200">
     <li *ngFor="let s of students" class="py-4 flex items-center justify-between">
       <span class="text-lg text-gray-700">{{s.name}} <span class="text-sm text-gray-500">({{s.age}} years, Grade: <span class="font-semibold text-blue-500">{{s.grade}}</span>)</span></span>
-      <button (click)="deleteStudent(s._id!)" class="ml-4 px-4 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition">Delete</button>
+  <button (click)="deleteStudent(s.id!)" class="ml-4 px-4 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition">Delete</button>
     </li>
   </ul>
 </div>
